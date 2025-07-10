@@ -3,6 +3,8 @@
 </div>
 
 <p align="center">
+    <a href="https://arxiv.org/abs/2507.10999" alt="arXiv">
+    <img src="https://img.shields.io/badge/arXiv-2507.10999-b31b1b.svg?style=flat" /></a>
     <a href="https://github.com/henry-pay/SpaRTAN/blob/main/LICENSE" alt="license">
         <img src="https://img.shields.io/badge/license-Apache--2.0-%23B7A800" />
     </a>
@@ -90,6 +92,10 @@ To train other SpaRTAN variants, parameters within the [config](src/config/) nee
 
 The experiment is carried out using [RT-DETRv1](https://github.com/lyuwenyu/RT-DETR/tree/main). Please refer to the corresponding repository for installation and dataset preparation instructions. By replacing the backbone model in RT-DETR with SpaRTAN, the training experiments can be run based on the given instructions in RT-DETR.
 
+## Hugging Face Checkpoint
+
+A variant of the model, SpaRTAN-S (SpaRTAN-small), has its checkpoint available on [Hugging Face](https://huggingface.co/henry-pay/SpaRTAN-S). This checkpoint can be downloaded using `hf_hub_download` which can be referred at [here](https://huggingface.co/docs/huggingface_hub/en/guides/download#download-a-single-file). 
+
 ## License
 
 This project is licensed under the [Apache 2.0 License](LICENSE)
@@ -98,7 +104,15 @@ This project is licensed under the [Apache 2.0 License](LICENSE)
 
 If you find this repository helpful, please consider citing:
 ```
-
+@inproceedings{
+    title={SpaRTAN: Spatial Reinforcement Token-based Aggregation Network for Visual Recognition},
+    author={Pay, Quan Bi and Baskaran, Vishnu Monn and Loo, Junn Yong and Wong, KokSheik and See, Simon},
+    booktitle={2025 International Joint Conference on Neural Networks (IJCNN)},
+    pages={to appear},
+    year={2025},
+    organization={IEEE},
+    note={Accepted}
+}
 ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
