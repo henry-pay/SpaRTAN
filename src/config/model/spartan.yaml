@@ -1,0 +1,34 @@
+name: "SpaRTAN"
+vis:
+  - "conv"
+  - "conv.0.conv"
+  - "conv.1.conv"
+  - "layers.2"
+  - "layers.2.smixer"
+  - "layers.2.smixer.h_conv"
+  - "layers.2.smixer.l_conv"
+  - "layers.2.cmixer"
+  - "layers.2.cmixer.theta"
+  - "layers.2.cmixer.proj"
+skip_list:
+  - "norm"
+  - "gamma"
+build:
+  num_layer: 4
+  layer_depths:
+    - 3
+    - 3
+    - 12
+    - 2
+  expand_ratios:
+    - 4
+    - 4
+    - 2
+    - 2
+  dims:
+    - 64
+    - 128
+    - 256
+  dropout: 0.1
+  init_dim: 32
+

@@ -1,0 +1,18 @@
+name: "IMAGENET"
+data_dir: ./data/imagenet/
+
+batch_size: 512
+num_workers: 8
+num_classes: 1000
+data_seed: 42
+
+transform:
+  augment: true
+  img_size: 256
+  crop_size: 256
+  h_prob: 0.5
+  magnitude: 7
+  re_prob: 0.25
+  cutmix_alpha: 1.0
+  mixup_alpha: 0.2
+  data_dtype: "32-bit"
